@@ -1,0 +1,36 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+buildscript {
+	ext {
+		
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		
+	}
+}
+
+
+group = 'com.java.webservice'
+version = '0.0.1-SNAPSHOT'
+
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+// https://mvnrepository.com/artifact/com.sun.jersey/jersey-bundle
+//compile group: 'com.sun.jersey', name: 'jersey-bundle', version: '1.18'
+//compile group: 'com.sun.jersey', name: 'jersey-server', version: '1.19'
+//compile group: 'com.sun.jersey', name: 'jersey-servlet', version: '1.19'
+//compile group: 'org.apache.tomcat', name: 'servlet-api', version: '6.0.44'
+compile group: 'org.glassfish.jersey.core', name: 'jersey-server', version: '2.26'
+// https://mvnrepository.com/artifact/javax.ws.rs/jsr311-api
+//compile group: 'javax.ws.rs', name: 'jsr311-api', version: '1.1.1'
+
+}
